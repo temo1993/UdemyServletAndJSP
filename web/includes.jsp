@@ -15,7 +15,7 @@
 <%@include file="WEB-INF/copyright.txt"%>
 
 <br/>
-<!-- dynamic include (runtime including) -->
+<!-- dynamic include (runtime including(by app.server)) -->
 <jsp:include page="WEB-INF/updates.txt"/>
 
 </body>
