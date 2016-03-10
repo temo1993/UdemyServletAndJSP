@@ -25,5 +25,16 @@
 <%@include file="variables.jsp"%>
 <%= name %>
 </p>
+
+
+<!-- Must use include jsp tag if yout dont' know what file you want till runtime -->
+<%
+    String id = request.getParameter("id");
+    if(id==null){
+%>
+<jsp:include page="idNotFound.html"/>
+<% } else { %>
+<jsp:include page="idFound.html"/>
+<% } %>
 </body>
 </html>
