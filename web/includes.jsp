@@ -14,9 +14,16 @@
 <!-- static include (compilation time including) -->
 <%@include file="WEB-INF/copyright.txt"%>
 
+
 <br/>
 <!-- dynamic include (runtime including(by app.server)) -->
 <jsp:include page="WEB-INF/updates.txt"/>
 
+
+<!-- Must use static include if it's got java in it that we want to access -->
+<p>Including file from variables.jsp :::
+<%@include file="variables.jsp"%>
+<%= name %>
+</p>
 </body>
 </html>
